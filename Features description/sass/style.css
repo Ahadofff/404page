@@ -1,0 +1,348 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Euclid Circular A;
+  color: #2e3a59;
+}
+
+body {
+  width: 100%;
+  height: 2050px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 96px;
+  border-bottom: solid #edf1f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .logo {
+  width: 154px;
+  height: 44px;
+  display: flex;
+  justify-content: space-around;
+}
+header .logo .mainlogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo .mainlogo div {
+  background-color: #ff3d71;
+  margin-bottom: 2px;
+}
+header .logo .mainlogo div:nth-child(1) {
+  width: 32px;
+  height: 32px;
+  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo .mainlogo div:nth-child(1) .row {
+  width: 14px;
+  height: 8px;
+}
+header .logo .mainlogo div:nth-child(1) .row img:nth-child(1) {
+  margin-right: 6px;
+}
+header .logo .mainlogo div:nth-child(2) {
+  width: 18px;
+  height: 4px;
+  border-radius: 2.5px;
+}
+header .logo .mainlogo div:nth-child(3) {
+  width: 12px;
+  height: 4px;
+  border-radius: 2.5px;
+}
+header .logo .logotext {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e3a59;
+  display: flex;
+  align-items: center;
+}
+header .headerlink {
+  width: 425px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+header .headerlink a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #222B45;
+}
+header .headerlink a:hover {
+  color: #c5cee0;
+  font-size: 22px;
+}
+header .headerbutton {
+  width: 276px;
+  height: 40px;
+}
+header .headerbutton button {
+  font-size: 14px;
+  font-weight: 400;
+}
+header .headerbutton button:nth-child(1) {
+  width: 113px;
+  height: 40px;
+  background-color: white;
+  color: #222B45;
+  border: #c5cee0 solid 1px;
+  border-radius: 8px;
+}
+header .headerbutton button:nth-child(2) {
+  width: 155px;
+  height: 40px;
+  background-color: #ff3d71;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+header .headerbutton button:nth-child(1):hover {
+  transform: translateX(-20px) scale(1.3);
+}
+header .headerbutton button:nth-child(2):hover {
+  transform: translateX(20px) scale(1.3);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .text {
+  width: 696px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+main .text h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+main .text h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+main img {
+  margin-top: 48px;
+  transition: all 0.3s ease-in-out;
+}
+main img:hover {
+  transform: scale(1.03) translate(-30px, 20px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+main .link {
+  width: 1216px;
+  height: 240px;
+  background-color: #ff708d;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 16px;
+  margin-top: 150px;
+  margin-top: 100px;
+}
+main .link .leftlink {
+  width: 600px;
+  height: 240px;
+  margin-left: 80px;
+}
+main .link .leftlink p:nth-child(1) {
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+  margin-top: 40px;
+}
+main .link .leftlink p:nth-child(2) {
+  font-size: 16px;
+  color: white;
+  margin-top: 16px;
+}
+main .link .leftlink .circle {
+  width: 374px;
+  height: 374px;
+  border-radius: 300px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -60px;
+  margin-top: -40px;
+}
+main .link .leftlink .circle div {
+  width: 304px;
+  height: 304px;
+  border-radius: 300px;
+  background: rgba(255, 255, 255, 0.16);
+  margin-top: 60px;
+}
+main .link .rightlink {
+  width: 600px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .link .rightlink button:nth-child(1) {
+  background-color: white;
+  width: 174px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: #222B45;
+  margin-right: 24px;
+  transition: all 0.3s ease-in-out;
+}
+main .link .rightlink button:nth-child(1):hover {
+  transform: scale(1.03) translate(-3px, 2px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #222B45;
+  color: white;
+}
+main .link .rightlink button:nth-child(2) {
+  width: 174px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222B45;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main .link .rightlink button:nth-child(2):hover {
+  transform: scale(1.03) translate(-3px, 2px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: #222B45;
+}
+
+footer {
+  background-color: #f7f9f2;
+  width: 100%;
+  height: 403px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+footer .aboutfooter {
+  width: 208px;
+  height: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .aboutfooter .logo {
+  width: 154px;
+  height: 44px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .aboutfooter .logo .mainlogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .aboutfooter .logo .mainlogo div {
+  background-color: #ff3d71;
+  margin-bottom: 2px;
+}
+footer .aboutfooter .logo .mainlogo div:nth-child(1) {
+  width: 32px;
+  height: 32px;
+  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .aboutfooter .logo .mainlogo div:nth-child(1) .row {
+  width: 14px;
+  height: 8px;
+}
+footer .aboutfooter .logo .mainlogo div:nth-child(1) .row img:nth-child(1) {
+  margin-right: 6px;
+}
+footer .aboutfooter .logo .mainlogo div:nth-child(2) {
+  width: 18px;
+  height: 4px;
+  border-radius: 2.5px;
+}
+footer .aboutfooter .logo .mainlogo div:nth-child(3) {
+  width: 12px;
+  height: 4px;
+  border-radius: 2.5px;
+}
+footer .aboutfooter .logo .logotext {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e3a59;
+  display: flex;
+  align-items: center;
+}
+footer .aboutfooter p {
+  width: 208px;
+  height: 72px;
+  font-size: 16px;
+}
+footer .footerlink {
+  width: 134px;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footerlink a:nth-child(1) {
+  font-size: 20px;
+}
+footer .footerlink a {
+  font-size: 16px;
+}
+footer .contact {
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .contact a {
+  font-size: 20px;
+}
+footer .contact div:nth-child(2) {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .contact div:nth-child(3) {
+  width: 264px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .contact div:nth-child(3) button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 300px;
+  background-color: #edf1f7;
+}
+footer .contact div:nth-child(3) button img {
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=style.css.map */
